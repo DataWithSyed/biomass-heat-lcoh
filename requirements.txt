@@ -1,0 +1,8 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7
+requests>=2.31
+pytest>=7
+biomass-heat-plant-model @ git+https://github.com/DataWithSyed/biomass-heat-plant-model.git
+biomass-heat-electrolysis-dispatch @ git+https://github.com/DataWithSyed/biomass-heat-electrolysis-dispatch.git

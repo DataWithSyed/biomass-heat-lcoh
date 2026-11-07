@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biomass-heat-lcoh"
+version = "0.1.0"
+description = "Levelised cost of heat for biomass gasification process-heat chains vs natural gas + EU ETS: cited CAPEX/OPEX, break-even CO2 price, tornado and Monte Carlo."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "DataWithSyed" }]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scipy>=1.11",
+  "requests>=2.31",
+  "biomass-heat-plant-model @ git+https://github.com/DataWithSyed/biomass-heat-plant-model.git",
+  "biomass-heat-electrolysis-dispatch @ git+https://github.com/DataWithSyed/biomass-heat-electrolysis-dispatch.git",
+]
+keywords = ["LCOH", "biomass gasification", "process heat", "techno-economics", "EU ETS", "Monte Carlo"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.7"]
+dev = ["matplotlib>=3.7", "pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/DataWithSyed/biomass-heat-lcoh"
+Project = "https://github.com/DataWithSyed/biomass-process-heat"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
