@@ -1,0 +1,36 @@
+mean DA price 110.8 EUR/MWh, n=8761
+NG reference: {'fuel': 93.4, 'co2': 29.34, 'total': 122.74} {'ng_mwh_lhv_per_mwh': 1.9117554902050702, 'co2_t_per_mwh': 0.38597360613578197, 'gcv_over_ncv': 1.1078688396849967}
+sizing grid oxy_partial done
+sizing grid oxy_full done
+sizing grid oxy_none_elec done
+  LCOH-optimal oxy_partial: 2.5x, 24.0 h -> 555.4
+  LCOH-optimal oxy_full: 2.5x, 24.0 h -> 575.3
+  LCOH-optimal oxy_none_elec: 2.5x, 24.0 h -> 328.8
+           scenario        config  lcoh  capex_meur  gap_to_ng  breakeven_co2_eur_t
+            central           air 329.8       135.2      207.0                612.5
+            central      oxy_none 282.3       120.3      159.6                489.5
+            central     steam_dfb 268.2       114.8      145.5                453.0
+            central oxy_none_elec 328.8       130.0      206.0                609.8
+            central   oxy_partial 555.4       228.2      432.6               1196.9
+            central      oxy_full 575.3       229.1      452.6               1248.6
+         integrated           air 261.5        89.8      138.8                435.5
+         integrated      oxy_none 221.4        80.8       98.6                331.5
+         integrated     steam_dfb 207.4        75.3       84.6                295.2
+         integrated oxy_none_elec 274.9        96.4      152.1                470.2
+         integrated   oxy_partial 463.0       169.6      340.3                957.6
+         integrated      oxy_full 490.5       176.8      367.8               1028.8
+integrated_low_cost           air 239.9        89.8      117.2                379.7
+integrated_low_cost      oxy_none 205.7        80.8       82.9                290.9
+integrated_low_cost     steam_dfb 191.7        75.3       68.9                254.6
+integrated_low_cost oxy_none_elec 249.8        86.5      127.1                405.3
+integrated_low_cost   oxy_partial 385.8       117.2      263.1                757.6
+integrated_low_cost      oxy_full 409.1       119.1      286.3                817.9
+        chain     p10     p50     p90    mean  p_cheaper_than_ng
+          air 290.885 320.738 351.212 320.955                0.0
+     oxy_none 249.729 275.057 301.215 275.310                0.0
+    steam_dfb 234.127 258.873 284.136 259.048                0.0
+oxy_none_elec 310.807 341.672 376.783 343.050                0.0
+  oxy_partial 500.872 559.636 627.976 562.716                0.0
+     oxy_full 523.404 591.422 671.317 595.106                0.0
+           ng 103.821 132.270 160.405 132.272                NaN
+done

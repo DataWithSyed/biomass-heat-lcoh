@@ -1,0 +1,107 @@
+{
+  "cost_inputs_central": {
+    "discount_rate": 0.07,
+    "lifetime_y": 20,
+    "flh": 8000.0,
+    "sf_process": 0.68,
+    "sf_aux": 0.44,
+    "aux_project_mult": 1.0,
+    "personnel_mult": 1.0,
+    "methanation_goetz_weight": 0.0,
+    "electrolyser_eur2016_kw": 1100.0,
+    "stack_life_h": 75000.0,
+    "stack_replacement_frac": 0.4,
+    "electrolyser_fom_frac": 0.02,
+    "h2_storage_eur2014_kg": 399.7209898893615,
+    "storage_fom_frac": 0.015,
+    "asu_eur_per_kg_h": 3000.0,
+    "asu_fom_frac": 0.02,
+    "biomass_eur_mwh": 30.280373831775698,
+    "electricity_price_mult": 1.0,
+    "electricity_adder_eur_mwh": 0.0,
+    "gas_eur_mwh_gcv": 44.1,
+    "co2_eur_t": 76.02,
+    "o2_price_eur_t": 0.0
+  },
+  "integrated_overrides": {
+    "aux_project_mult": 0.5,
+    "personnel_mult": 0.5
+  },
+  "mean_da_price_eur_mwh": 110.82610775025681,
+  "n_hours": 8761,
+  "ng": {
+    "ng_mwh_lhv_per_mwh": 1.9117554902050702,
+    "co2_t_per_mwh": 0.38597360613578197,
+    "gcv_over_ncv": 1.1078688396849967
+  },
+  "ng_lcoh_central": {
+    "fuel": 93.40266824824567,
+    "co2": 29.341713538442143,
+    "total": 122.74438178668782
+  },
+  "eurostat_gas_DE_I4_X_TAX_eur_mwh_gcv": {
+    "2007-S2": 27.900000000000002,
+    "2008-S1": 33.4,
+    "2008-S2": 36.8,
+    "2009-S1": 31.8,
+    "2009-S2": 28.9,
+    "2010-S1": 29.2,
+    "2010-S2": 29.1,
+    "2011-S1": 30.599999999999998,
+    "2011-S2": 32.099999999999994,
+    "2012-S1": 30.5,
+    "2012-S2": 30.900000000000002,
+    "2013-S1": 33.099999999999994,
+    "2013-S2": 34.0,
+    "2014-S1": 31.4,
+    "2014-S2": 27.799999999999997,
+    "2015-S1": 27.599999999999998,
+    "2015-S2": 25.8,
+    "2016-S1": 22.5,
+    "2016-S2": 22.4,
+    "2017-S1": 22.1,
+    "2017-S2": 21.5,
+    "2018-S1": 21.7,
+    "2018-S2": 22.5,
+    "2019-S1": 22.700000000000003,
+    "2019-S2": 21.2,
+    "2020-S1": 19.0,
+    "2020-S2": 19.3,
+    "2021-S1": 20.299999999999997,
+    "2021-S2": 32.0,
+    "2022-S1": 48.7,
+    "2022-S2": 62.8,
+    "2023-S1": 62.6,
+    "2023-S2": 58.4,
+    "2024-S1": 46.6,
+    "2024-S2": 48.800000000000004,
+    "2025-S1": 46.9,
+    "2025-S2": 42.8,
+    "2026-S1": 44.1
+  },
+  "hicp_ea": {
+    "2014": 99.81,
+    "2016": 100.23,
+    "2025": 128.75
+  },
+  "h2_storage_eur2014_per_kg_derived": 399.7209898893615,
+  "lcoh_optimal_sizing_O4": {
+    "oxy_partial": {
+      "capacity_factor": 2.5,
+      "storage_h": 24.0
+    },
+    "oxy_full": {
+      "capacity_factor": 2.5,
+      "storage_h": 24.0
+    },
+    "oxy_none_elec": {
+      "capacity_factor": 2.5,
+      "storage_h": 24.0
+    }
+  },
+  "n_monte_carlo": 10000,
+  "attribution": [
+    "Day-ahead prices (DE-LU): Energy-Charts.info (Fraunhofer ISE), CC BY 4.0; source SMARD.de",
+    "Gas prices and HICP: Eurostat (nrg_pc_203, prc_hicp_aind), CC BY 4.0"
+  ]
+}
